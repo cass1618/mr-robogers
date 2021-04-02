@@ -1,11 +1,4 @@
-//INPUT: number
-//OUPUT: array with elements equal to number+1
-//for each element:
-//If .includes(3) -> "Won't you be my neighbor?"
-//Else if .includes(2) -> "Boop!"
-//Else if .includes(1) -> "Beep!"
-//Else -> number
-
+// BUSINESS LOGIC
 function beepBoop (userNumber) {
   let array = [];
   for (let i = 0; i <= userNumber; i++) {
@@ -21,3 +14,13 @@ function beepBoop (userNumber) {
   }
   return array;
 }
+
+// UI LOGIC
+$(document).ready(function() {
+  $("#beep-boop").submit(function(event) {
+    event.preventDefault();
+
+    const userNumber = $("#number").val();
+    $("#beep-boop").html(beepBoop(userNumber));
+  });
+});
