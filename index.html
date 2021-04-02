@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
@@ -12,7 +12,33 @@
   <title>Beep! Boop!</title>
   <link rel="icon" href="icon.png" type="image/icon type">
 </head>
+
 <body>
+  <div class="contatiner">
+    <h1>Enter a number to beep beep boop</h1>
+    <form id="beep-boop">
+      <div>
+        <label for="number">Recipient's Name</label>
+        <input id="number" type="text" required>
+      </div>
+      <div class="formGroup">
+        <label for="name2">Sender's Name</label>
+        <input id="name2" class="form-control" type="text" required>
+      </div>
+      <div>
+        <button type="submit" class="btn, btn-primary">Submit Form</button> 
+      </div>
+    </form>
+    <div id="letter">
+      <h1>Your Letter</h1>
+      <p>Dear <span class="beep-boop">NAME</span>
+    </div>
+  </div>
+</body>
+
+
+<!-- <body>
+    
      <h1>Mr. Robogers</h1>
   <form id="beep-boop">
       <div class="formGroup">
@@ -32,7 +58,7 @@
 
   </div>
   
-</body>
+</body> -->
 </html>
 
 

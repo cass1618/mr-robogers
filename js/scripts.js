@@ -23,6 +23,6 @@ $(document).ready(function() {
     const userNumber = $("#number").val();
     $(".beep-boop").text(beepBoop(userNumber));
 
-    $("ouput").show();
+    $("beep-boop").show();
   });
 });

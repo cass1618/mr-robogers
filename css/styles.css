@@ -8,8 +8,10 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   
 }
-sdfa
-label {
+
+label { 
+  
+  font-size: 10vh;
 
 }
 
@@ -28,13 +30,21 @@ form {
 }
 
 button {
-  color: pink;
-  background-color: powderblue;
+  height: 12vh;
+  width: 12vw;
+  margin-top: 12vh;;
+  margin-bottom: 12vh;
+  float: left;
 }
 
 input[type=submit] {
+  
   color:crimson;
   background-color: darkgreen;
+}
+
+img {
+  float:unset;
 }
 
 input[type=button] {
