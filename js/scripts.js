@@ -21,6 +21,8 @@ $(document).ready(function() {
     event.preventDefault();
 
     const userNumber = $("#number").val();
-    $("#beep-boop").html(beepBoop(userNumber));
+    $("#beep-boop").text(beepBoop(userNumber));
+
+    $("ouput").show();
   });
 });
