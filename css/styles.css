@@ -1,5 +1,4 @@
 body {
-  color: #FFFFFF;
   margin: 25px;
 
   /* font-family: 'Montserrat', sans-serif;
@@ -11,7 +10,7 @@ body {
 
 label { 
   
-  font-size: 10vh;
+  font-size: 3vh;
 
 }
 
@@ -29,25 +28,33 @@ form {
   box-sizing: border-box;
 }
 
-button {
-  height: 12vh;
-  width: 12vw;
-  margin-top: 12vh;;
-  margin-bottom: 12vh;
-  float: left;
+.group {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: teal;
 }
 
-input[type=submit] {
-  
-  color:crimson;
-  background-color: darkgreen;
+button {
+  position: absolute;
+  height: 18vh;
+  width: 18vw;
+  top: 10px;
+  left: 10px;
+  border: none;
+  opacity: 0;
 }
 
 img {
-  float:unset;
+  position: relative;
+  height: 18vh;
+  width: auto;
+  top: 0;
+  left: 0;
 }
 
 input[type=button] {
   color:orange;
   background-color: yellow;
 }
+
