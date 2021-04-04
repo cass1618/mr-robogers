@@ -8,31 +8,55 @@
   <script src="js/scripts.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
   <title>Beep! Boop!</title>
   <link rel="icon" href="images/icon.png" type="image/icon type">
 </head>
+<body>
+  <div class="credit">
+    <p id="credit">Illustration by:<br> Maddie Copp twitter@oitsraspberry</p>
+  </div>
+  
+  <div class="main-div">
+    <form id="beep-boop" autocomplete="off">
     
-     <h1>Mr. Robogers</h1>
-  <form id="beep-boop">
-      <div class="formGroup">
-        <h1></h1>
-        <label for="number">How many syllables would you like me to beep-boop?</label>
-    
+    <div class="form-div">
+      
+      <label for="number" id="lab">How many syllables would you like me to beep-boop?</label>
+
+      <div class="left-div">
         <input class="form-control" type="text" id="number" name="number" required>
-      <div class="group">
-        <p class="submit"></p>
-        <img src="images/cloud.png">
-        <button type="submit">Submit</button>
+        <div class="button-group">
+          <!-- <p class="submit"></p> -->
+          <img src="images/cloud.png" id="cloud">
+          <button type="submit">Submit</button>
+        </div>
       </div>
+
+      <div class="right-div">
+        <div id="output">
+          <p><span class="beep-boop"></span></p>
+        </div>
+
+      </div>
+      
     </div>
+    
   </form>
 
-  <div id="output">
-    <p><span class="beep-boop"></span></p>
-  </div>  
+  <div class="robogers-group">
+      <img src="images/robogers.png" id="robogers">
+      
+    </div>
+  
 
+  
+  
+  <!-- <span class="fullString"></span> -->
   </div>
+  
+  
   
 </body>
 </html>
