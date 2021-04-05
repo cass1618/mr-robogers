@@ -2,14 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> -->
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:wght@300&family=Orbitron&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
   <title>Beep! Boop!</title>
   <link rel="icon" href="images/icon.png" type="image/icon type">
 </head>
@@ -17,47 +13,31 @@
   <div class="credit">
     <p id="credit">Illustration by:<br> Maddie Copp twitter@oitsraspberry</p>
   </div>
-  
   <div class="main-div">
     <form id="beep-boop" autocomplete="off">
-    
-    <div class="form-div">
-      
-      <label for="number" id="lab">How many syllables would you like me to beep-boop?</label>
-
-      <div class="left-div">
-        <input class="form-control" type="text" id="number" name="number" required>
-        <div class="button-group">
-          <!-- <p class="submit"></p> -->
-          <img src="images/cloud.png" id="cloud">
-          <button type="submit">Submit</button>
+      <div class="form-div"> 
+        <label for="number" id="lab">Enter a number in the box!<br>  I will count to that number<br> with an added twist!</label>
+        <div class="left-div">
+          <input class="form-control" type="text" id="number" name="number" required>  
+          <div class="button-group">
+            <img src="images/cloud.png" id="cloud">
+            <button type="submit">Submit</button>
+          </div>
+          <div id="click">Click here and scroll down to view full list.</div>
         </div>
-      </div>
-
-      <div class="right-div">
-        <div id="output">
-          <p><span class="beep-boop"></span></p>
-        </div>
-
-      </div>
-      
+        <div class="right-div">
+          <div id="output">
+            <p><span class="beep-boop"></span></p>
+          </div>
+        </div>     
+      </div>   
+    </form>
+    <div class="robogers-group">
+      <img src="images/robogers.png" id="robogers"> 
     </div>
-    
-  </form>
-
-  <div class="robogers-group">
-      <img src="images/robogers.png" id="robogers">
-      
+    <div class="bottom-div"><span id="fullList">span</span>
     </div>
-  
-
-  
-  
-  <!-- <span class="fullString"></span> -->
   </div>
-  
-  
-  
 </body>
 </html>
 
